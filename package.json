@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "docusaurus start --host 0.0.0.0",
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
     "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "clear": "docusaurus clear",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "deploy": "docusaurus deploy" 
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",
