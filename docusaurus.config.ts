@@ -10,6 +10,7 @@ const config: Config = {
   baseUrl: '/Doc-Autron/',
   organizationName: 'TCC-DS18',
   projectName: 'Doc-Autron',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   i18n: {
     defaultLocale: 'pt-BR',
