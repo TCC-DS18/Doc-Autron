@@ -1,0 +1,150 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border-bottom: 1px solid #eceef3;
+}
+
+.supergraphic {
+  height: 6px;
+  background: linear-gradient(90deg, #d50005, #be0004 38%, #9e2b96 68%, #791073);
+}
+
+.heroGrid {
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+  gap: 56px;
+  align-items: center;
+  padding: 64px 0 76px;
+}
+
+.heroText h1 {
+  color: #161616;
+  font-size: clamp(3.5rem, 10vw, 7.5rem);
+  line-height: 0.9;
+  letter-spacing: 0;
+  margin: 14px 0 22px;
+}
+
+.heroText p {
+  color: #343a46;
+  max-width: 680px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.kicker {
+  color: #9e2b96;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.identityPanel {
+  border: 1px solid #eceef3;
+  border-radius: 8px;
+  padding: 28px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f8fb 100%);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.08);
+}
+
+.identityPanel img {
+  width: min(100%, 340px);
+  align-self: center;
+}
+
+.identityPanel strong,
+.identityPanel span {
+  display: block;
+}
+
+.identityPanel strong {
+  color: #161616;
+  font-size: 1.25rem;
+}
+
+.identityPanel span {
+  color: #525a66;
+  margin-top: 6px;
+}
+
+.section {
+  padding: 56px 0 80px;
+  background: #f7f8fa;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e7e9ef;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.card h3 {
+  color: #161616;
+  font-size: 1.05rem;
+}
+
+.card p {
+  color: #4d5562;
+  line-height: 1.55;
+}
+
+:global(html[data-theme='dark']) .hero,
+:global(html[data-theme='dark']) .section {
+  background: #111217;
+}
+
+:global(html[data-theme='dark']) .hero {
+  border-bottom-color: #2a2d36;
+}
+
+:global(html[data-theme='dark']) .identityPanel,
+:global(html[data-theme='dark']) .card {
+  background: #16171d;
+  border-color: #2a2d36;
+}
+
+:global(html[data-theme='dark']) .heroText h1,
+:global(html[data-theme='dark']) .heroText p,
+:global(html[data-theme='dark']) .kicker,
+:global(html[data-theme='dark']) .identityPanel strong,
+:global(html[data-theme='dark']) .identityPanel span,
+:global(html[data-theme='dark']) .section h2,
+:global(html[data-theme='dark']) .card h3,
+:global(html[data-theme='dark']) .card p {
+  color: #ffffff;
+}
+
+@media (max-width: 996px) {
+  .heroGrid,
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroGrid {
+    min-height: auto;
+    padding: 44px 0 56px;
+    gap: 32px;
+  }
+}

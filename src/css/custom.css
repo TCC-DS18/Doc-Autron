@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'BoschSans';
+  src: url('/fonts/BoschSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BoschSans';
+  src: url('/fonts/BoschSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BoschSans';
+  src: url('/fonts/BoschSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --ifm-font-family-base: 'BoschSans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'BoschSans', system-ui, sans-serif;
+  --ifm-color-primary: #d50005;
+  --ifm-color-primary-dark: #be0004;
+  --ifm-color-primary-darker: #9f0003;
+  --ifm-color-primary-darkest: #7d0002;
+  --ifm-color-primary-light: #e51b20;
+  --ifm-color-primary-lighter: #f1363b;
+  --ifm-color-primary-lightest: #ff5b5f;
+  --ifm-link-color: #9e2b96;
+  --ifm-menu-color-active: #d50005;
+  --ifm-navbar-height: 68px;
+  --ifm-global-radius: 8px;
+  --ifm-code-font-size: 95%;
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #111217;
+  --ifm-navbar-background-color: #16171d;
+  --ifm-footer-background-color: #0b0c10;
+  --ifm-color-primary: #ff4a4f;
+  --ifm-link-color: #ffffff;
+  --ifm-font-color-base: #ffffff;
+  --ifm-heading-color: #ffffff;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-active: #ffffff;
+}
+
+html[data-theme='dark'] body,
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6,
+html[data-theme='dark'] p,
+html[data-theme='dark'] li,
+html[data-theme='dark'] strong,
+html[data-theme='dark'] span,
+html[data-theme='dark'] td,
+html[data-theme='dark'] th,
+html[data-theme='dark'] label,
+html[data-theme='dark'] a,
+html[data-theme='dark'] button,
+html[data-theme='dark'] .button,
+html[data-theme='dark'] .navbar__link,
+html[data-theme='dark'] .navbar__title,
+html[data-theme='dark'] .menu__link,
+html[data-theme='dark'] .theme-doc-markdown,
+html[data-theme='dark'] .theme-doc-sidebar-container {
+  color: #ffffff;
+}
+
+body {
+  color: #161616;
+}
+
+.navbar {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.navbar::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d50005, #be0004 38%, #9e2b96 68%, #791073);
+  z-index: 300;
+}
+
+.navbar__logo img {
+  border-radius: 4px;
+}
+
+.button {
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.button--primary {
+  background: linear-gradient(90deg, #d50005, #9e2b96);
+  border: 0;
+}
+
+.button--secondary {
+  color: #161616;
+  border-color: #c9ced8;
+  background: #ffffff;
+}
+
+.theme-doc-markdown img {
+  border-radius: 8px;
+  border: 1px solid #e3e6ed;
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #111217;
+}

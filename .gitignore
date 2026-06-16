@@ -1,0 +1,7 @@
+node_modules/
+build/
+.docusaurus/
+.docusaurus-cache/
+docusaurus-start*.log
+.env
+.env.local
