@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Autron',
   tagline: 'Documentação essencial do robô assistente pedagógico',
-  favicon: 'img/autron.png',
+  favicon: 'img/autron-icon.png',
   url: 'https://TCC-DS18.github.io',
   baseUrl: '/Doc-Autron/',
   organizationName: 'TCC-DS18',
